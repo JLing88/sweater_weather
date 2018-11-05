@@ -3,6 +3,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :forecast, only: [:index] do
       end
+
+      resources :backgrounds, only: [:index] do
+      end
     end
   end
 end
