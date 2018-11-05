@@ -37,7 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'figaro'
 gem 'faraday'
-gem 'active_model_serializers', '~> 0.9.3'
+gem 'fast_jsonapi'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,6 +51,7 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
   gem 'simplecov'
+  gem 'awesome_print'
 end
 
 group :development do

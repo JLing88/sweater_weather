@@ -1,7 +1,7 @@
 class GoogleService
 
-  def get_lat_long(url)
-    get_json(url)[:results].first[:geometry][:location]
+  def get_lat_long(city_state)
+    get_json("/maps/api/geocode/json?address=#{city_state})}&key=#{ENV["google_api_key"]}&region=es")[:results].first[:geometry][:location]
   end
 
   private
