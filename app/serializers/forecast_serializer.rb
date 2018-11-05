@@ -3,8 +3,8 @@ class ForecastSerializer
 
   set_type :forecast
   set_id :city_state
-  attributes :id,
-             :current_weather,
-             :weekly_forecast
+  attributes :current_weather,
+             :weekly_forecast,
+             :hourly_forecast
 
 end

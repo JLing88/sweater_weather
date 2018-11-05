@@ -1,8 +1,7 @@
 class Forecast
-
   attr_reader :city_state,
               :forecast,
-              :coordinates,
+              :coordinates
 
   def initialize(city_state)
     @city_state = city_state
@@ -13,7 +12,11 @@ class Forecast
   end
 
   def weekly_forecast
-    forecast[:weekly]
+    forecast[:daily]
+  end
+
+  def hourly_forecast
+    forecast[:hourly]
   end
 
   def forecast
