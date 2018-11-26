@@ -13,7 +13,7 @@ describe "As a User", type: :request do
         expect(result[:data][:attributes]).to have_key(:current_weather)
         expect(result[:data][:attributes]).to have_key(:weekly_forecast)
         expect(result[:data][:attributes]).to have_key(:hourly_forecast)
-        expect(result[:data][:attributes][:current_weather].count).to eq(19)
+        expect(result[:data][:attributes][:current_weather].count).to eq(17)
         expect(result[:data][:attributes][:weekly_forecast][:data].count).to eq(8)
         expect(result[:data][:attributes][:hourly_forecast][:data].count).to eq(49)
       end
