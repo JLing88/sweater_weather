@@ -7,7 +7,7 @@ class Background
   end
 
   def images
-    background_service.image_data(coordinates)
+    @images ||= background_service.image_data(coordinates)
   end
 
   private
@@ -23,5 +23,4 @@ class Background
   def background_service
     FlickrService.new
   end
-
 end
